@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>MY <span> Shop</span></h1>
+        <h3>Welcome to my survey</h3>
+      </header>
+
+      <div id="form-container">
+        <form action="#">
+          <div class="input">
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              name=""
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="input">
+            <label for="age">Age</label><br />
+            <input
+              type="number"
+              name="age"
+              id="age"
+              placeholder="Enter your age"
+              required
+            />
+          </div>
+          <div class="e-mail">
+            <label for="email">E-mail</label><br />
+            <input
+              type="e-mail"
+              name="e-mail"
+              id="e-mail"
+              placeholder="Enter your e-mail"
+            />
+          </div>
+          <br />
+          <div class="input">
+            <label for="content">Content Type</label>
+            <br />
+            <select name="content" id="dropdown">
+              <option value="Series">Series</option>
+              <option value="Movies">Movies</option>
+              <option value="tv-show">tv-show</option></select
+            ><br />
+            <br />
+          </div>
+
+          <div class="input" id="checkbox">
+            <label for="check">Movie type</label>
+            <br />
+            <input type="checkbox" name="comedy" id="check1" />
+            <label for="check1">Comedy</label>
+            <br />
+            <input type="checkbox" name="action" id="check2" />
+            <label for="check2">Action </label>
+            <br />
+            <input type="checkbox" name="Romance" id="check3" />
+            <label for="check3">Romance </label>
+          </div>
+          <br />
+          <div class="input">
+            <label for="gender">Gender</label>
+            <br />
+            <input type="radio" name="gender" id="male" />
+            <label for="gender">Male</label>
+            <br />
+            <input type="radio" name="gender" id="female" />
+            <label for="gender">Female</label>
+            <br />
+            <input type="radio" name="gender" id="other" />
+            <label for="gender">Other</label>
+            <br /><br />
+          </div>
+
+          <div class="input">
+            <label for="Feed Back">Feed Back</label>
+            <br />
+            <textarea
+              name="feedback"
+              id="feedback"
+              placeholder="anycomment"
+            ></textarea>
+          </div>
+
+          <br />
+          <div class="form-submit">
+            <!-- <input type="submit" value="Send" id="submit" /> -->
+            <button type="submit" id="form-button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
